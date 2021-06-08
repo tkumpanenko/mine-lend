@@ -1,12 +1,9 @@
-@import "_font.scss";
-
 @import "helpers/variables";
 @import "helpers/placeholder";
-@import "helpers/mixin";
 
 @import "normalize";
 @import "base";
 
 //header
 
-@import "./components/header";
+@import "./components//header";

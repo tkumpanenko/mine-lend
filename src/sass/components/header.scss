@@ -1,0 +1,44 @@
+.header {
+ display: flex;
+ height: 42px;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.menu {
+ width: 85%;
+}
+
+.menu-list {
+ display: flex;
+ justify-content: space-between;
+
+ &__item {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+
+  a {
+   color: #000;
+   text-decoration: none;
+   padding-right: 5px;
+  }
+ }
+
+ &__item:hover {
+  color: $primary-color;
+  outline: 2px solid #eaedf5;
+  border-radius: 2px;
+ }
+
+ &__item--arrow span::after {
+  content: "";
+  background-image: url(../images/arrow.svg);
+  display: inline-block;
+  width: 12px;
+  height: 6px;
+  position: relative;
+  bottom: 1px;
+ }
+}
