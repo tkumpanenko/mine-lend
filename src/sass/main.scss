@@ -1,9 +1,11 @@
 @import "helpers/variables";
 @import "helpers/placeholder";
+@import "helpers/bootstrap-grid.scss";
 
 @import "normalize";
 @import "base";
 
-//header
-
-@import "./components//header";
+@import "./components/section-header";
+@import "./components/section-first.scss";
+@import "./components/section-second.scss";
+@import "./components/section-third.scss";
