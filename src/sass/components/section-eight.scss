@@ -1,0 +1,50 @@
+.section-eight {
+ display: flex;
+ height: 450px;
+ align-items: center;
+
+ &-text {
+  h2 {
+   font-size: 34px;
+   color: rgba(22, 82, 172, 1);
+  }
+ }
+
+ &-middle {
+  p {
+   line-height: 32px;
+   max-width: 432px;
+   padding-bottom: 20px;
+  }
+
+  button {
+   width: 306px;
+   @extend %blue-button;
+
+   &:before {
+    background-image: url(../images/eight-arrow.png);
+    content: "";
+    display: block;
+    width: 80px;
+    left: 0;
+    position: relative;
+    padding-right: 10p;
+    background-position: center;
+    height: 15px;
+    background-repeat: no-repeat;
+   }
+  }
+ }
+
+ &-right {
+  img {
+   max-width: 197px;
+  }
+ }
+}
+
+.blue-color-ref {
+ color: $primary-color;
+ text-decoration: none;
+ font-weight: 800;
+}

@@ -1,0 +1,104 @@
+.section-seven {
+ background-color: #fbfbfc;
+ padding-bottom: 80px;
+
+ &-bilder {
+  h2 {
+   margin: 0;
+   padding-bottom: 40px;
+   text-align: center;
+   font-size: 28px;
+   letter-spacing: 4.4px;
+   font-weight: normal;
+  }
+
+  img {
+   max-width: 610px;
+   display: flex;
+   margin: 0 auto;
+   padding-bottom: 30px;
+  }
+
+  .section-seven-blue-text {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   max-width: 1198px;
+
+   &__item {
+    @extend %blue-button;
+
+    p {
+     letter-spacing: 1.4px;
+    }
+   }
+  }
+ }
+}
+
+//blue buttons
+
+.section-seven-buttons {
+ position: relative;
+ max-width: 610px;
+ margin: 0 auto;
+ padding-bottom: 80px;
+}
+
+.section-seven__button {
+ width: 126px;
+ height: 78px;
+ background-color: rgba(255, 255, 255, 1);
+ box-shadow: 0px 0px 21px 0px rgba(64, 68, 75, 0.14);
+ border-radius: 8px;
+ border: none;
+
+ @media (max-width: 992px) {
+  display: none;
+ }
+}
+
+.blue-arrow-left {
+ margin-right: 18px;
+ &:after {
+  @extend %after-blue-line;
+  background-image: url(../images/seven-left.svg);
+ }
+}
+
+.blue-arrow-right:after {
+ @extend %after-blue-line;
+ background-image: url(../images/seven-right.svg);
+}
+
+//dots
+
+.section-seven-dots {
+ position: absolute;
+ top: 0;
+ left: 331px;
+ display: flex;
+ @media (max-width: 992px) {
+  left: 40%;
+ }
+
+ @media (max-width: 380px) {
+  left: 33%;
+ }
+}
+
+.section-seven-dot {
+ display: block;
+ width: 12px;
+ height: 12px;
+ background-color: #80abff;
+ border-radius: 50%;
+ border: 1px solid #0045ac;
+ margin-right: 28px;
+}
+
+.active-dot {
+ background-color: #004fc7;
+}
+
+//
