@@ -1,25 +1,68 @@
+.section-eight-block {
+ border-bottom: 2px solid #eef0f4;
+ margin-bottom: 20px;
+}
+
 .section-eight {
  display: flex;
  height: 450px;
  align-items: center;
 
+ @media (max-width: 768px) {
+  flex-direction: column;
+  height: unset;
+ }
+
  &-text {
+  @media (max-width: 540px) {
+   order: 2;
+   text-align: center;
+  }
   h2 {
    font-size: 34px;
-   color: rgba(22, 82, 172, 1);
+   color: #1652ac;
+   @media (max-width: 768px) {
+    text-align: center;
+   }
   }
  }
 
  &-middle {
+  position: relative;
+
+  &:last-child {
+   text-align: center;
+  }
+
+  @media (max-width: 768px) {
+   margin-bottom: 30px;
+  }
+
+  @media (max-width: 540px) {
+   order: 3;
+  }
   p {
    line-height: 32px;
    max-width: 432px;
    padding-bottom: 20px;
+
+   @media (max-width: 768px) {
+    margin: 0 auto;
+   }
   }
 
   button {
    width: 306px;
    @extend %blue-button;
+
+   @media (max-width: 768px) {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
 
    &:before {
     background-image: url(../images/eight-arrow.png);
@@ -27,8 +70,8 @@
     display: block;
     width: 80px;
     left: 0;
-    position: relative;
-    padding-right: 10p;
+    bottom: 27px;
+    position: absolute;
     background-position: center;
     height: 15px;
     background-repeat: no-repeat;
@@ -39,6 +82,17 @@
  &-right {
   img {
    max-width: 197px;
+
+   @media (max-width: 540px) {
+    order: 1;
+   }
+
+   @media (max-width: 768px) {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+   }
   }
  }
 }
