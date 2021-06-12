@@ -61,9 +61,10 @@
 
 .blue-arrow-left {
  margin-right: 18px;
+
  &:after {
   @extend %after-blue-line;
-  background-image: url(../images/seven-left.svg);
+  background-image: url(../images/sever-left.svg);
  }
 }
 
